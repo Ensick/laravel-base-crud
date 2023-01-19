@@ -8,9 +8,11 @@
 
     <form method="POST" action="{{route('comics.store')}}">
 
+        @csrf
+
         <div class="mb-3">
           <label class="form-label">Titolo</label>
-          <input name="title" type="email" class="form-control" id="title">
+          <input name="title" type="text" class="form-control">
         </div>
 
         <div class="mb-3">
@@ -29,18 +31,18 @@
         </div>
 
         <div class="mb-3">
-        <label class="form-label">Serie</label>
-        <input name="series" type="text" class="form-control">
+            <label class="form-label">Serie</label>
+            <input name="series" type="text" class="form-control">
         </div>
 
         <div class="mb-3">
-        <label class="form-label">Uscita</label>
-        <input name="sale_date" type="text" class="form-control">
+            <label class="form-label">Uscita</label>
+            <input name="sale_date" type="text" class="form-control">
         </div>
 
         <div class="mb-3">
-        <label class="form-label">Genere</label>
-        <input name="type" type="text" class="form-control">
+            <label class="form-label">Genere</label>
+            <input name="type" type="text" class="form-control">
         </div>
 
 
