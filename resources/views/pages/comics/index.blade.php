@@ -5,6 +5,10 @@
 @section('main-content')
     <h1>Lista Comics</h1>
 
+    <div>
+        <a href="{{route('comics.create')}}">Pubblica il tuo Fumetto!</a>
+    </div>
+
     <table class="table">
         <thead>
           <tr>

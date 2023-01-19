@@ -3,6 +3,7 @@
 @section('page-title', 'DC-Comics-Show')
 
 @section('main-content')
+
 <table class="table">
     <thead>
       <tr>
