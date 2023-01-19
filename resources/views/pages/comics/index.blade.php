@@ -23,9 +23,13 @@
             @foreach ($comics as $elem)
             <tr>
                 <td>{{$elem->id}}</td>
-                <td>{{$elem->title}}</td>
+                <td>
+                    <a href="{{route('comics.show', $elem->id )}}">
+                        {{$elem->title}}
+                    </a>
+                </td>
                 <td>{{$elem->description}}</td>
-                <td> <img src="{{$elem->thumb}}" alt="img"> </td>
+                <td> <img src="{{$elem->thumb}}" alt="img"></td>
                 <td>{{$elem->price}}</td>
                 <td>{{$elem->series}}</td>
                 <td>{{$elem->sale_date}}</td>
@@ -35,4 +39,7 @@
 
         </tbody>
       </table>
+
+      {{$comics->links()}}
+
 @endsection
