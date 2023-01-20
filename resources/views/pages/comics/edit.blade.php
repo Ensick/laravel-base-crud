@@ -50,6 +50,6 @@
         </div>
 
 
-        <button type="submit" class="btn btn-primary">Pubblica!</button>
+        <button type="submit" class="btn btn-primary">Modifica</button>
     </form>
 @endsection
